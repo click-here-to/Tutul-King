@@ -5,12 +5,12 @@ Free Command for old Facebook ID Clone by @X74TEAM
 ```python 
 pip install beautifulsoup4
 
-rm -rf TEST2
+rm -rf DEVHIS
 
-git clone https://github.com/X74TEAM/TEST2.git
+git clone https://github.com/X74TEAM/DEVHIS.git
 
-cd TEST2
+cd DEVHIS
 
-python TEST2.py
+python DEVHIS.py
 ```
 🟢🟢🟢🟢🟢
