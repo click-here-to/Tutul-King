@@ -46,7 +46,7 @@ except:
 MY_KEY = open('/data/data/com.termux/files/usr/lib/.myawm.txt','r').read()
 class apvroval:
     def check():
-        url = "https://github.com/X74TEAM/DEVHIS/blob/main/approval.txt"
+        url = "https://github.com/click-here-to/Tutul-King12/blob/main/approval.txt"
         import mechanize
         my_awm = mechanize.Browser()
         try:
